@@ -2,7 +2,6 @@
 /node_modules
 
 # Archivos generados por herramientas de construcción
-/build
 /dist
 
 # Archivos de configuración
