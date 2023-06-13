@@ -1,0 +1,38 @@
+# Dependencias
+/node_modules
+
+# Archivos generados por herramientas de construcción
+/build
+/dist
+
+# Archivos de configuración
+/.env
+
+# Archivos de registro
+/logs
+*.log
+
+# Archivos de respaldo
+*.bak
+*.swp
+
+# IDE/Editor
+.idea
+.vscode
+*.sublime-*
+
+# Dependencias específicas del sistema operativo (opcional)
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS:
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
