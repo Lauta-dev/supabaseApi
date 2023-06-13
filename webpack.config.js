@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
   entry: "./src/app.ts",
@@ -6,6 +7,14 @@ module.exports = {
     filename: "bundle.js",
     path: path.resolve(__dirname, "build"),
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      "process.env.SUPABASE_URL": JSON.stringify(process.env.SUPABASE_URL),
+      "process.env.SUPABASE_API_KEY": JSON.stringify(
+        process.env.SUPABASE_API_KEY
+      ),
+    }),
+  ],
   resolve: {
     extensions: [".ts", ".js"],
   },
